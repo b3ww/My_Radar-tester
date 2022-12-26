@@ -36,7 +36,7 @@ def generate_script():
             line = "T " + str(random.randint(50, 1870)) + " " + str(random.randint(50, 1030))
             line += " " + str(random.randint(30, 200)) + "\n"
             buffer += line
-        file.write(buffer)
+        file.write(buffer[:-1])
         file.close()
         return path
 
